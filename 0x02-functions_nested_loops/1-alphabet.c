@@ -10,7 +10,7 @@
 
 	/* printing alphabet from a to z */
 
-	void print_alphabet(void)
+	void print_alphabet(void) /* printing alphabet function */
 
 	{
 		char a;
