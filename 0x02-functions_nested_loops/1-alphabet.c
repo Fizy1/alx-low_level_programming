@@ -1,5 +1,5 @@
 #include "main.h"
-#include "1-main.c"
+/*#include "1-main.c"*/
 
 /**
  * main - a function that prints the alphabet, in lowercase and a new line
@@ -8,15 +8,17 @@
  *
  * Return: 0
  */
-	char n;
+	char a;
 
 	void print_alphabet(void)
 	{
-		while (n <= 'z')
+		while (a <= 'z')
 		{
-			_putchar('n');
-			n++;
-	}
+			_putchar('a');
+			a++;
+		}
 
 	_putchar('\n');
 	return;
+
+	}
