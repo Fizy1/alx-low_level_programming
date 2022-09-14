@@ -3,7 +3,7 @@
 /**
  * main - a function that prints the alphabet, in lowercase and a new line
  *
- * Description - 'a function that prints the alphabet, in lowercase'
+ * print_alphabet - 'a function that prints the alphabet, in lowercase'
  *
  * Return: 0
  */
