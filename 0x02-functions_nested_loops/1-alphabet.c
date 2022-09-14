@@ -8,7 +8,9 @@
  * Return: 0
  */
 
+	/* printing alphabet from a to z */	
 	void print_alphabet(void)
+	
 	{
 		char a;
 		for (a = 'a'; a <= 'z'; a++)
