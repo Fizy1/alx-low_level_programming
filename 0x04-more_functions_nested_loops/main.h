@@ -24,4 +24,6 @@ void more_numbers(void);
 
 void print_line(int);
 
-void print_diagonal(int n);
+void print_diagonal(int);
+
+void print_square(int);
