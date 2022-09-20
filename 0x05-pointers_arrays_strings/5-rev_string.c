@@ -19,6 +19,7 @@ void rev_string(char *s)
 	int length, c;
 
 	char *begin, *end, temp;
+
 	length = string_length(s);
 	begin = s;
 	end = s;
@@ -48,6 +49,7 @@ int string_length(char *pointer)
 
 {
 	int c = 0;
+
 	while (*(pointer + c) != '\0')
 	{
 		c++;
