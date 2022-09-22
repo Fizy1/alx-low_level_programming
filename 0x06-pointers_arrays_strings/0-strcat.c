@@ -1,41 +1,20 @@
-#include <stdio.h>
-
-void f(int *a);
+#include "main.h"
 
 /**
- * main - Illustrating the array type decay
+ * _strcat - Concatenates the string pointed to by @src,
+ * null byte, to the end of the string pointed to by @dest.
+ * @dest: A pointer to the string to be concatenated upon.
+ * @src: The source string to be appended to @dest.
  *
- * Return: Always 0.
- *
+ * Return: A pointer to the destination string @dest.
  */
-
-int main(void)
-
+char *_strcat(char *dest, char *src)
 {
-	int *p;
+	int index = 0, dest_len = 0;
 
-	int t[10];
-
-	p = t; /* This works because of the auto implicit conversion to (int *) */
-	printf("t: %p\n", t);
-	printf("&t[0]: %p\n", &t[0]);
-	printf("p: %p\n", p);
-	f(t);
-	return (0);
-}
-
-/**
- * f - prints the value of a pointer of type int
- *
- * @a: address of an integer we need to print
- *
- * Return: Nothing
- *
- */
-
-void f(int *a)
-
-{
-	printf("a: %p\n", a);
-	return;
+	while (dest[index++])
+		dest_len++;
+	for (index = 0; src[index]; index++)
+		dest[dest_len++] = src[index];
+	return (dest);
 }
